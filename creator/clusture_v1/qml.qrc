@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>KmhSpeedometer.qml</file>
+        <file>RpmSpeedometer.qml</file>
+    </qresource>
+</RCC>
