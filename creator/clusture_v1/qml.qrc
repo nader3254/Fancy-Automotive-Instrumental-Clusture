@@ -3,5 +3,14 @@
         <file>main.qml</file>
         <file>KmhSpeedometer.qml</file>
         <file>RpmSpeedometer.qml</file>
+        <file>BatteryIndicator.qml</file>
+        <file>FuelIndicator.qml</file>
+        <file>images/background.png</file>
+        <file>images/batteryIcon.png</file>
+        <file>images/flare1.png</file>
+        <file>images/flare2.png</file>
+        <file>images/fuelIcon.png</file>
+        <file>images/pointer.png</file>
+        <file>KmhElement.qml</file>
     </qresource>
 </RCC>

@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include "splashanimator.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,6 +17,12 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
+
+
+   QObject *obj = engine.rootObjects()[0];
+   SplashAnimator * MyAnimator=new SplashAnimator(obj);
+
+
 
     return app.exec();
 }
