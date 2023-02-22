@@ -1,9 +1,9 @@
 import QtQuick 2.15
 
 Item {
-   width:600
-   height: 600
-
+//   width:600
+//   height: 600
+anchors.fill: parent
     Rectangle {
         id: rectangle2
         x: 166

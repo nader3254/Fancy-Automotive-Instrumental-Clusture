@@ -9,7 +9,9 @@ Item {
 
 
     Rectangle {
-        id: rectangle1
+        id: r21
+        visible: false
+        objectName: "r21"
         x: 11
         y: 391
         width: 40
@@ -19,7 +21,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle2
+        id: r20
+        visible: false
+        objectName: "r20"
         x: 16
         y: 180
         width: 35
@@ -29,7 +33,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle3
+        id: r18
+        visible: false
+        objectName: "r18"
         x: 129
         y: 52
         width: 35
@@ -39,7 +45,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle4
+        id: r14
+        visible: false
+        objectName: "r14"
         x: 294
         y: 16
         width: 35
@@ -49,7 +57,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle5
+        id: r10
+        visible: false
+        objectName: "r10"
         x: 448
         y: 85
         width: 35
@@ -59,7 +69,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle6
+        id: r6
+        visible: false
+        objectName: "r6"
         x: 534
         y: 230
         width: 35
@@ -69,7 +81,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle7
+        id: r2
+        visible: false
+        objectName: "r2"
         x: 521
         y: 401
         width: 35
@@ -79,7 +93,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle8
+        id: r1
+        visible: false
+        objectName: "r1"
         x: 464
         y: 483
         width: 35
@@ -89,7 +105,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle9
+        id: r0
+        visible: false
+        objectName: "r0"
         x: 411
         y: 530
         width: 35
@@ -99,7 +117,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle10
+        id: r4
+        visible: false
+        objectName: "r4"
         x: 545
         y: 317
         width: 28
@@ -109,7 +129,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle11
+        id: r8
+        visible: false
+        objectName: "r8"
         x: 507
         y: 152
         width: 28
@@ -119,7 +141,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle12
+        id: r12
+        visible: false
+        objectName: "r12"
         x: 380
         y: 36
         width: 28
@@ -129,7 +153,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle13
+        id: r16
+        visible: false
+        objectName: "r16"
         x: 212
         y: 19
         width: 28
@@ -139,7 +165,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle14
+        id: r19
+        visible: false
+        objectName: "r19"
         x: 65
         y: 106
         width: 28
@@ -149,7 +177,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle16
+        id: r15
+        visible: false
+        objectName: "r15"
         x: 257
         y: 18
         width: 24
@@ -160,7 +190,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle17
+        id: r17
+        visible: false
+        objectName: "r17"
         x: 174
         y: 36
         width: 24
@@ -171,7 +203,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle18
+        id: r13
+        visible: false
+        objectName: "r13"
         x: 344
         y: 24
         width: 24
@@ -182,7 +216,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle19
+        id: r11
+        visible: false
+        objectName: "r11"
         x: 419
         y: 60
         width: 24
@@ -193,7 +229,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle20
+        id: r9
+        visible: false
+        objectName: "r9"
         x: 484
         y: 120
         width: 24
@@ -204,7 +242,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle21
+        id: r7
+        visible: false
+        objectName: "r7"
         x: 527
         y: 191
         width: 24
@@ -215,7 +255,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle22
+        id: r5
+        visible: false
+        objectName: "r5"
         x: 548
         y: 278
         width: 24
@@ -226,7 +268,9 @@ Item {
     }
 
     Rectangle {
-        id: rectangle23
+        id: r3
+        visible: false
+        objectName: "r3"
         x: 541
         y: 362
         width: 24
@@ -238,7 +282,9 @@ Item {
 
 
     Text {
-        id: text1
+        id: rt8
+        visible: false
+        objectName: "rt8"
         x: -15
         y: 272
         color: "#ffffff"
@@ -249,7 +295,9 @@ Item {
     }
 
     Text {
-        id: text2
+        id: rt9
+        visible: false
+        objectName: "rt9"
         x: 56
         y: 364
         color: "#ffffff"
@@ -259,7 +307,9 @@ Item {
     }
 
     Text {
-        id: text3
+        id: rt0
+        visible: false
+        objectName: "rt0"
         x: 390
         y: 482
         color: "#ffffff"
@@ -269,7 +319,9 @@ Item {
     }
 
     Text {
-        id: text4
+        id: rt1
+        visible: false
+        objectName: "rt1"
         x: 489
         y: 431
         color: "#ffffff"
@@ -279,7 +331,9 @@ Item {
         font.weight: Font.Bold
     }
     Text {
-        id: text5
+        id: rt2
+        visible: false
+        objectName: "rt2"
         x: 487
         y: 357
         width: 19
@@ -291,7 +345,9 @@ Item {
     }
 
     Text {
-        id: text6
+        id: rt3
+        visible: false
+        objectName: "rt3"
         x: 509
         y: 223
         width: 19
@@ -303,7 +359,9 @@ Item {
     }
 
     Text {
-        id: text7
+        id: rt4
+        visible: false
+        objectName: "rt4"
         x: 427
         y: 95
         width: 19
@@ -315,7 +373,9 @@ Item {
     }
 
     Text {
-        id: text8
+        id: rt5
+        visible: false
+        objectName: "rt5"
         x: 302
         y: 35
         width: 19
@@ -327,7 +387,9 @@ Item {
     }
 
     Text {
-        id: text9
+        id: rt6
+        visible: false
+        objectName: "rt6"
         x: 150
         y: 68
         width: 19
@@ -339,7 +401,9 @@ Item {
     }
 
     Text {
-        id: text10
+        id: rt7
+        visible: false
+        objectName: "rt7"
         x: 54
         y: 174
         width: 51

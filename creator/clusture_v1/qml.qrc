@@ -12,5 +12,10 @@
         <file>images/fuelIcon.png</file>
         <file>images/pointer.png</file>
         <file>KmhElement.qml</file>
+        <file>RpmElement.qml</file>
+        <file>FrameLights.qml</file>
+        <file>Flare2.qml</file>
+        <file>ControlButtons.qml</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 #include "splashanimator.h"
+#include "systemgraphics.h"
 
 int main(int argc, char *argv[])
 {
@@ -9,6 +11,7 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
+  //  qmlRegisterType<SplashAnimator>("dash.graphics",1,0,"SplashAnimator");    //take care
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
@@ -22,7 +25,10 @@ int main(int argc, char *argv[])
    QObject *obj = engine.rootObjects()[0];
    SplashAnimator * MyAnimator=new SplashAnimator(obj);
 
-
+   SystemGraphics *myGraphics=new SystemGraphics(obj);
+   QQmlApplicationEngine *eng=&engine;
+   eng->rootContext()->setContextProperty("F1Animation",MyAnimator);
+   eng->rootContext()->setContextProperty("GraphicsController",myGraphics);
 
     return app.exec();
 }

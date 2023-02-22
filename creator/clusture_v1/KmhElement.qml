@@ -3,14 +3,14 @@ import QtQuick 2.15
 
 KmhSpeedometer{
     id:root
-    property int kmhVal: 0
-    property int kmh: 0
-    property int splashCtr: 0
+
     x: 21
     y: 126
  //   rotation: 0
 
-
+    property int kmhVal: 0
+    property int kmh: 0 //this will move the needle
+    property int splashCtr: 0
 
     function setKmh(val)
     {
@@ -46,7 +46,7 @@ KmhSpeedometer{
                   }
               }
            }
-         }
+        }
 
     Timer{
         id:needle_runtime_Moover
@@ -57,33 +57,7 @@ KmhSpeedometer{
         }
     }
 
-//    Timer{
-//        //splash animator
-//        id:sp_animator
-//        interval: 1; running: true; repeat: true
-//        onTriggered:
-//        {
-//            //needleMoover.interval=100
-//        //    setKmh(180)
-////            if(splashCtr<1)
-////            {
-////              //  needleMoover.interval=1
-////                setKmh(260)
-////                if(kmh_needle.rotation>260)
-////                {
-////                    splashCtr++;
-////                }
-////            }
-////            else
-////            {
-////               // needleMoover.interval=20
-////                setKmh(0)
-////                sp_animator.stop()
-////            }
-//        }
 
-
-//    }
 
     FuelIndicator {
         x: 253
@@ -110,33 +84,7 @@ KmhSpeedometer{
             rotation: -193.507
 
         }
-//        transitions: Transition {
-//            ParallelAnimation{
 
 
-//            }
-//            ParallelAnimation{
-
-//            }
-//        }
-//        }
-//            RotationAnimation{
-//                duration:1000
-//                 direction: RotationAnimation.Counterclockwise
-//            }
-//    RotationAnimation{
-//        id:clokwise
-//        duration:1000
-
-//        direction: RotationAnimation.Clockwise
-//    }
-//    RotationAnimation{
-//        id:counter_clokwise
-//        duration:1000
-//        direction: RotationAnimation.Counterclockwise
-//    }
-//}
-
-
-}
+    }
 }
