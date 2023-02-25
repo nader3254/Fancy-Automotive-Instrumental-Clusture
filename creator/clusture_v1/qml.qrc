@@ -17,5 +17,12 @@
         <file>Flare2.qml</file>
         <file>ControlButtons.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>MidUiNavigator.qml</file>
+        <file>images/calls.png</file>
+        <file>images/gps.png</file>
+        <file>images/music.png</file>
+        <file>images/status.png</file>
+        <file>images/status2.png</file>
+        <file>images/weather.png</file>
     </qresource>
 </RCC>

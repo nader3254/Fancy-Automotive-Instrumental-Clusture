@@ -9,6 +9,9 @@ Image {
     source: "../images/flare2.png"
     fillMode: Image.PreserveAspectFit
 
+    property bool mnu: false
+
+
 
     Text {
         id: text3
@@ -26,32 +29,21 @@ Image {
             width: 250
             height: 2
             color: "#ffffff"
-//            opacity:0
-//            NumberAnimation on opacity {
-//                id:r1_animate
-//                duration: 0
-//                from: 1
-//                to: 0
 
-
-//            }
-//            NumberAnimation on opacity {
-//                id:r1_animate2
-//                duration: 0
-//                from: 0
-//                to: 1
-//                onFinished: r1_animate.start()
-//            }
 
         }
 
     }
+
     opacity:0
     NumberAnimation on opacity {
         id:t1_animate
         duration: 0
         from: 1
         to: 0
+        onFinished: {
+
+        }
 
 
     }
@@ -60,7 +52,9 @@ Image {
         duration: 0
         from: 0
         to: 1
-        onFinished: t1_animate.start()
+        onFinished: {
+            t1_animate.start()
+        }
     }
 
     Timer

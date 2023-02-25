@@ -4,7 +4,7 @@ import Qt5Compat.GraphicalEffects
 
 Item {
     objectName: "frameLights"
-    property string fcolor: "#e8121a"
+    property string fcolor: "#d13232"
     property var curr_opacity: 100
     property var state: 0
     property bool up_to_down: true
@@ -382,7 +382,7 @@ Item {
         y: 115
         width: 0
         height: 42
-        color: "#f70009"
+        color: fcolor
     }
 
     Rectangle {
@@ -391,7 +391,7 @@ Item {
         y: 140
         width: 0
         height: 14
-        color: "#f70009"
+        color: fcolor
         rotation: 7.92
     }
 
@@ -401,7 +401,7 @@ Item {
         y: 128
         width: 0
         height: 14
-        color: "#f70009"
+        color: fcolor
         rotation: 7.92
     }
 
@@ -411,7 +411,7 @@ Item {
         y: 120
         width: 0
         height: 14
-        color: "#f70009"
+        color: fcolor
         rotation: 7.92
     }
 

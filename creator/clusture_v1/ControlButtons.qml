@@ -10,8 +10,40 @@ Rectangle
     property real speed: 0
     property real speed2: 0
     property real flashModer: 0
+    property bool mnu: false
+
+    property bool upS: false
+    property bool downS: false
+    property bool leftS: false
+    property bool rightS: false
+    property bool okS: false
+
+
     color: "transparent"
 
+    Timer{
+        id:ttt
+        interval: 1;repeat: false;running: false
+        onTriggered: {
+            if(upS==true)
+            {
+
+                upS=false
+            }
+            if(downS==true)
+            {
+
+                downS=false
+            }
+            if(okS==true)
+            {
+
+                okS=false
+            }
+
+
+        }
+    }
         Button {
             id:power_on
             anchors.bottom: parent.bottom
@@ -142,5 +174,103 @@ Rectangle
                     }
                 }
             }
+        }
+        Button {
+            id:menu
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 40
+            anchors.left: flashMode.right
+            anchors.leftMargin:4
+            width: 100
+            height: 80
+            text: "Menu"
+            onClicked:
+            {
+              mnu=true
+            }
+
+        }
+        Button {
+            id:up
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 82
+            anchors.left: power_on.right
+            anchors.leftMargin:4
+            width: 80
+            height: 40
+            text: "up"
+            onClicked:
+            {
+                upS=true
+                ttt.start()
+
+            }
+
+        }
+        Button {
+            id:down
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: power_on.right
+            anchors.leftMargin:4
+            width: 80
+            height: 40
+            text: "down"
+            onClicked:
+            {
+                downS=true
+                ttt.start()
+
+            }
+
+        }
+        Button {
+            id:ok
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: down.right
+            anchors.leftMargin:4
+            width: 100
+            height: 82
+            text: "ok"
+            onClicked:
+            {
+                okS=true
+
+            }
+
+        }
+        Button {
+            id:left
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 82
+            anchors.left: ok.right
+            anchors.leftMargin:4
+            width: 80
+            height: 40
+            text: ">"
+            onClicked:
+            {
+                leftS=true
+                ttt.start()
+
+            }
+
+        }
+        Button {
+            id:right
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: ok.right
+            anchors.leftMargin:4
+            width: 80
+            height: 40
+            text: "<"
+            onClicked:
+            {
+                rightS=false
+
+            }
+
         }
 }

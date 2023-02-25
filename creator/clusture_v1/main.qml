@@ -10,7 +10,12 @@ ApplicationWindow {
     height: 720
     visible: true
 
-
+    property bool en_menu: cb.mnu
+//    property bool _upS: false
+//    property bool _downS: false
+//    property bool _leftS: false
+//    property bool _rightS: false
+//    property bool _okS: false
 
     Rectangle{
         anchors.fill: parent
@@ -25,16 +30,15 @@ ApplicationWindow {
                 y: -139
                 width: 1024
                 height: 849
-        //        anchors.fill: parent
                 source: "qrc:/images/background.png"
                 fillMode: Image.PreserveAspectFit
 
 
-                Flare2{
+                Flare2
+                {
+                    id:flr2
 
-                }
-
-
+                }               
                 KmhElement
                 {
                     objectName: "kmhElement"
@@ -58,50 +62,94 @@ ApplicationWindow {
                     scale: 0.54
 
                 }
+
+                //ListView  that can move between uis (music player - world map - whether displayer - gps indicator - call answering - fuel , oil , engine temprature displayer   )
             }
+
+        }
+        MidUiNavigator
+        {
+            visible: en_menu
+            _upS:cb.upS
+            _downS:cb.downS
+            _okS:cb.okS
+
+        }
     }
-    }
-    ControlButtons{
+    ControlButtons
+    {
+        id:cb
 
     }
+
 
 }
 
-//                Image {
-//                    id: flare1
-//                    x: 313
-//                    y: 105
-//                    source: "qrc:/images/flare1.png"
-//                    fillMode: Image.PreserveAspectFit
-//                    opacity:0
-//                    NumberAnimation on opacity {
-//                        id:flare1_animate
-//                        //target: flare1
-//                        duration: 0
-//                        from: 1
-//                        to: 0
 
 
-//                    }
-//                    NumberAnimation on opacity {
-//                        id:flare1_animate2
-//                        //target: flare1
-//                        duration: 0
-//                        from: 0
-//                        to: 1
-//                        onFinished: flare1_animate.start()
-//                    }
-//                    Timer{
 
-//                        id:flare1_tmr
-//                        objectName: "flare1"
-//                        interval: 1;running: false  ;repeat: false
-//                        onTriggered: {
 
-//                            flare1_animate.duration=1000
-//                            flare1_animate2.duration=1000
-//                            flare1_animate2.start()
-//                           flare1_tmr.running=false
-//                        }
-//                    }
-//            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Image {
+//    id: flare1
+//    x: 313
+//    y: 105
+//    source: "qrc:/images/flare1.png"
+//    fillMode: Image.PreserveAspectFit
+//    opacity:0
+//    NumberAnimation on opacity {
+//        id:flare1_animate
+//        //target: flare1
+//        duration: 0
+//        from: 1
+//        to: 0
+
+
+//    }
+//    NumberAnimation on opacity {
+//        id:flare1_animate2
+//        //target: flare1
+//        duration: 0
+//        from: 0
+//        to: 1
+//        onFinished: flare1_animate.start()
+//    }
+//    Timer{
+
+//        id:flare1_tmr
+//        objectName: "flare1"
+//        interval: 1;running: false  ;repeat: false
+//        onTriggered: {
+
+//            flare1_animate.duration=1000
+//            flare1_animate2.duration=1000
+//            flare1_animate2.start()
+//           flare1_tmr.running=false
+//        }
+//    }
+//}
