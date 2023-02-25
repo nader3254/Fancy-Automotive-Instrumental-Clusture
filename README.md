@@ -2,7 +2,7 @@
 
 this project aims to design basic automotive instrumental clusture with some fancy animation
 
-last update :22-2-2023
+last update :25-2-2023
 
 
 ## Achievements
