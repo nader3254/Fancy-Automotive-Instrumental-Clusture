@@ -8,6 +8,11 @@
 #include <QQmlApplicationEngine>
 #include <QQuickItem>
 #include <QTimer>
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QJsonValue>
+#include "utilities/filebrowser.h"
+#include <QThread>
 
 class SystemGraphics : public QObject
 {
@@ -15,7 +20,15 @@ class SystemGraphics : public QObject
 public:
     explicit SystemGraphics(QObject *parent = nullptr);
 
+    typedef enum
+    {
+        MusicPlayer=2,
+        GpsMaps=1,
+        WeatherForecast=0,
+        EngineStatus=3,
+        CallAnswering=4
 
+    }uis_t;
 
 
 signals:
@@ -30,6 +43,10 @@ void setLightColor(QString clr);
 void setFrameFlashSpeed(int mode);
 void updateClock();
 void setTemprature(int vall);
+void openMenu();
+void openUI(SystemGraphics::uis_t page);
+void setMusicPath(QString path);
+
 };
 
 #endif // SYSTEMGRAPHICS_H

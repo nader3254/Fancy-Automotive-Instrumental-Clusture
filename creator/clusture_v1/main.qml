@@ -69,10 +69,17 @@ ApplicationWindow {
         }
         MidUiNavigator
         {
+            id:midnav
             visible: en_menu
             _upS:cb.upS
             _downS:cb.downS
             _okS:cb.okS
+
+        }
+        UiNavigator
+        {
+            id:uinavi
+
 
         }
     }

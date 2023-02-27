@@ -18,6 +18,8 @@ Rectangle
     property bool rightS: false
     property bool okS: false
 
+    property int  _navigator: 0
+    property bool _ennavigator: false
 
     color: "transparent"
 
@@ -41,9 +43,48 @@ Rectangle
                 okS=false
             }
 
+            if(leftS==true)
+            {
+                if(_navigator>=1)
+                {
+                    _navigator--;
+                    _ennavigator=true
+                }
 
+
+                leftS=false
+                console.log("navigator is :",_navigator);
+                GraphicsController.openUI(_navigator);
+               // t2.start()
+            }
+            if(rightS==true)
+            {
+                if(_navigator<4)
+                {
+
+                    _navigator++;
+                    _ennavigator=true
+                }
+
+                rightS=false
+                console.log("navigator is :",_navigator)
+                GraphicsController.openUI(_navigator);
+                //t2.start()
+            }
         }
     }
+//    Timer
+//    {
+//        id:t2
+//        interval: 1;repeat: true;running: false
+//        onTriggered:
+//        {
+
+//         _ennavigator=false
+
+
+//        }
+//    }
         Button {
             id:power_on
             anchors.bottom: parent.bottom
@@ -268,7 +309,50 @@ Rectangle
             text: "<"
             onClicked:
             {
-                rightS=false
+                rightS=true
+                ttt.start()
+            }
+
+        }
+        Button {
+            id:back
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: right.right
+            anchors.leftMargin:4
+            width: 100
+            height: 82
+            text: "back"
+            onClicked:
+            {
+               //back callback
+
+            }
+
+        }
+        FileDialog
+        {
+             id: convertFD
+             onAccepted:
+             {
+                //console.log(convertFD.currentFolder/*.replace("file:///")*/)
+                GraphicsController.setMusicPath(convertFD.currentFolder)
+             }
+
+        }
+        Button {
+            id:m_path
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: back.right
+            anchors.leftMargin:4
+            width: 100
+            height: 82
+            text: "music path"
+            onClicked:
+            {
+               //back callback
+                convertFD.open()
 
             }
 

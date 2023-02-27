@@ -18,9 +18,11 @@ last update :25-2-2023
 
 6- Path view act as Navigator to switch between the stackview uis
 
+7- fancy music player that can change path and play/stop music
+
 ## Future Working 
 
-1- Stop engine animation 
+1- Stop engine animation should contain off lights for speedometers
 
 2- control fuel and battery indicators
 
@@ -28,6 +30,7 @@ last update :25-2-2023
 
 4- add kmh text and rpm text
 
-5- add stack view to switch between (music player  - whether displayer - gps indicator - call answering - fuel , oil , engine temprature displayer   )
+5- add stack view to switch between ( whether displayer - gps indicator - call answering - fuel , oil , engine temprature displayer   )
+
 
 

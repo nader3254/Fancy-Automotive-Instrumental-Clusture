@@ -23,6 +23,7 @@ Rectangle
     property bool _rightS: false
     property bool _okS: false
 
+
     Timer{
         interval: 1;repeat: true;running: true
         onTriggered: {
@@ -42,9 +43,9 @@ Rectangle
                // _okS=false
 
             }
+
         }
     }
-
 
     ListModel {
         id:pvModel

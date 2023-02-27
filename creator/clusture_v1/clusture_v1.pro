@@ -7,7 +7,8 @@ QT += quick
 SOURCES += \
         main.cpp \
         splashanimator.cpp \
-        systemgraphics.cpp
+        systemgraphics.cpp \
+        utilities/filebrowser.cpp
 
 RESOURCES += qml.qrc
 
@@ -24,4 +25,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     splashanimator.h \
-    systemgraphics.h
+    systemgraphics.h \
+    utilities/filebrowser.h

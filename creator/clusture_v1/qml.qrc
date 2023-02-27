@@ -24,5 +24,17 @@
         <file>images/status.png</file>
         <file>images/status2.png</file>
         <file>images/weather.png</file>
+        <file>UiNavigator.qml</file>
+        <file>MusicPlayer.qml</file>
+        <file>WeatherForecast.qml</file>
+        <file>GpsMap.qml</file>
+        <file>CallAnswering.qml</file>
+        <file>EngineStatus.qml</file>
+        <file>images/music2.png</file>
+        <file>images/next.png</file>
+        <file>images/pause.png</file>
+        <file>images/play2.png</file>
+        <file>images/previous.png</file>
+        <file>images/volume.png</file>
     </qresource>
 </RCC>
