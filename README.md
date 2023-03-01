@@ -20,17 +20,17 @@ last update :25-2-2023
 
 7- fancy music player that can change path and play/stop music
 
+8- added  whether displayer - gps indicator map - call answering - syste,  info   
+
 ## Future Working 
 
 1- Stop engine animation should contain off lights for speedometers
 
 2- control fuel and battery indicators
 
-3- add temprature texy and date time text 
-
 4- add kmh text and rpm text
 
-5- add stack view to switch between ( whether displayer - gps indicator - call answering - fuel , oil , engine temprature displayer   )
+
 
 
 

@@ -1,6 +1,6 @@
 import QtQuick 2.15
-import QtQuick.Controls
-import QtQuick.Dialogs
+import QtQuick.Controls 2.15
+import QtQuick.Dialogs 1.3
 
 Rectangle
 {
@@ -169,7 +169,7 @@ Rectangle
             onAccepted:
             {
 
-                simulator.clr = selectedColor
+                simulator.clr = currentColor
                 GraphicsController.setLightColor(simulator.clr)
                 //console.log(simulator.clr)
             }
@@ -335,8 +335,8 @@ Rectangle
              id: convertFD
              onAccepted:
              {
-                //console.log(convertFD.currentFolder/*.replace("file:///")*/)
-                GraphicsController.setMusicPath(convertFD.currentFolder)
+                console.log(convertFD.folder/*.replace("file:///")*/)
+                GraphicsController.setMusicPath(convertFD.folder)
              }
 
         }

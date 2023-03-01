@@ -1,10 +1,11 @@
 import QtQuick 2.15
-import Qt5Compat.GraphicalEffects
+//import Qt5Compat.GraphicalEffects
 
 
 Item {
     objectName: "frameLights"
-    property string fcolor: "#d13232"
+    property string fcolor: "#f01616"
+    property string fcolor2: "#ffffff"
     property var curr_opacity: 100
     property var state: 0
     property bool up_to_down: true
@@ -120,10 +121,11 @@ Item {
 
            }
     }
+    //main frame timer
     Timer {
         id:tmr2
         objectName: "FrameLights2"
-           interval: 2; running: false; repeat: true
+           interval: 1; running: false; repeat: true
            onTriggered:
            {
 
@@ -193,6 +195,7 @@ Item {
 
            }
        }
+   //main frame timer 2
     Timer {
         id:tmr1
            interval:1; running: false; repeat: true
@@ -259,10 +262,11 @@ Item {
 
            }
        }
+    //for the mid down
     Timer {
         id:tmr3
         objectName: "FrameLights4"
-           interval:100; running: false; repeat: true
+           interval:120; running: false; repeat: true
            onTriggered:
            {
              switch(state)
@@ -315,9 +319,10 @@ Item {
            }
 
     }
+    //for the mid up
     Timer {
         id:tmr4
-           interval:5; running: false; repeat: true
+           interval:8; running: false; repeat: true
            objectName: "FrameLights5"
            onTriggered:
            {
@@ -342,10 +347,10 @@ Item {
                  }
                  else
                  {
-                     mid_up1_ll.color="#ffffff"
-                     mid_up1_r.color="#ffffff"
-                     mid_up1_r2.color="#ffffff"
-                     mid_up1_r3.color="#ffffff"
+                     mid_up1_ll.color=fcolor2
+                     mid_up1_r.color=fcolor2
+                     mid_up1_r2.color=fcolor2
+                     mid_up1_r3.color=fcolor2
 
                      mid_up1_ll.width=0
                      mid_up1_ll.x=349+146
@@ -363,7 +368,8 @@ Item {
                      else
                      {
                           F1Animation.startFlare1Animation()
-                         fcolor="#14e1d5"
+                         // fcolor="#14e1d5"
+                         //here i can set color in custom
                      }
 
                      ctr++;

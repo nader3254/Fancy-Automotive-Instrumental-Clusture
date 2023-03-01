@@ -29,12 +29,33 @@
         <file>WeatherForecast.qml</file>
         <file>GpsMap.qml</file>
         <file>CallAnswering.qml</file>
-        <file>EngineStatus.qml</file>
+        <file>SystemInfo.qml</file>
         <file>images/music2.png</file>
         <file>images/next.png</file>
         <file>images/pause.png</file>
         <file>images/play2.png</file>
         <file>images/previous.png</file>
         <file>images/volume.png</file>
+        <file>images/call_da.png</file>
+        <file>images/user(1).png</file>
+        <file>images/user(2).png</file>
+        <file>images/user(3).png</file>
+        <file>images/user.png</file>
+        <file>images/weather/cloudy.png</file>
+        <file>images/weather/day_night.png</file>
+        <file>images/weather/eclipse.png</file>
+        <file>images/weather/humidity.png</file>
+        <file>images/weather/moon.png</file>
+        <file>images/weather/moon_2.png</file>
+        <file>images/weather/moon_cloudy.png</file>
+        <file>images/weather/rain.png</file>
+        <file>images/weather/rainy-day.png</file>
+        <file>images/weather/sun.png</file>
+        <file>images/weather/sun_cloudy.png</file>
+        <file>images/weather/sun_cloudy2.png</file>
+        <file>images/weather/sunny.png</file>
+        <file>images/weather/umbrella.png</file>
+        <file>images/logo.png</file>
+        <file>images/logo_2.png</file>
     </qresource>
 </RCC>

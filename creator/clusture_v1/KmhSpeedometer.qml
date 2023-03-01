@@ -5,6 +5,917 @@ Item {
    width:600
    height: 600
 
+   property string clor: "#1f1f1f"
+   Rectangle {
+
+       x: 166
+       y: 555
+       width: 30
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 299.483
+   }
+
+
+   Rectangle {
+
+       x: 161
+       y: 559
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 301.868
+   }
+
+   Rectangle {
+
+       x: 153
+       y: 554
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 301.868
+   }
+
+   Rectangle {
+
+       x: 145
+       y: 549
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 304.657
+   }
+
+
+   Rectangle {
+
+       x: 138
+       y: 543
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 304.657
+   }
+       Rectangle {
+
+           x: 129
+           y: 534
+           width: 18
+           height: 5
+           color: clor
+           radius: 4
+           rotation: 308.182
+       }
+
+   Rectangle {
+
+       x: 123
+       y: 530
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 310.036
+   }
+
+   Rectangle {
+
+       x: 116
+       y: 524
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 313.304
+   }
+
+   Rectangle {
+
+       x: 109
+       y: 517
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 316.31
+   }
+
+   Rectangle {
+
+       x: 102
+       y: 510
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 317.225
+   }
+   Rectangle {
+
+       x: 89
+       y: 491
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 319.226
+   }
+   Rectangle {
+
+       x: 91
+       y: 497
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 320.109
+   }
+
+   Rectangle {
+
+       x: 83
+       y: 484
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 322.772
+   }
+
+   Rectangle {
+
+       x: 78
+       y: 477
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 324.298
+   }
+
+   Rectangle {
+
+       x: 73
+       y: 470
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 324.298
+   }
+   Rectangle {
+
+         x: 65
+         y: 460
+         width: 18
+         height: 5
+         color: clor
+         radius: 4
+         rotation: 328.446
+     }
+   Rectangle {
+
+       x: 62
+       y: 452
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 329.768
+   }
+
+   Rectangle {
+
+       x: 58
+       y: 444
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 332.06
+   }
+
+   Rectangle {
+
+       x: 54
+       y: 436
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 335.186
+   }
+
+   Rectangle {
+
+       x: 50
+       y: 427
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 338.384
+   }
+
+   Rectangle {
+
+       x: 42
+       y: 413
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 339.527
+   }
+
+   Rectangle {
+
+       x: 41
+       y: 404
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 340.881
+   }
+
+   Rectangle {
+
+       x: 38
+       y: 396
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 346.313
+   }
+
+   Rectangle {
+
+       x: 36
+       y: 388
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 349.508
+   }
+
+   Rectangle {
+
+       x: 35
+       y: 379
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 351.815
+   }
+   Rectangle {
+
+           x: 31
+           y: 367
+           width: 18
+           height: 5
+           color: clor
+           radius: 4
+           rotation: 355.603
+       }
+   Rectangle {
+
+       x: 30
+       y: 358
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 357.307
+   }
+
+   Rectangle {
+
+       x: 29
+       y: 349
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 358.462
+   }
+
+   Rectangle {
+
+       x: 28
+       y: 339
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 356.147
+   }
+
+   Rectangle {
+
+       x: 27
+       y: 330
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 0.637
+   }
+   Rectangle {
+
+       x: 25
+       y: 317
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 359.839
+   }
+
+   Rectangle {
+
+       x: 27
+       y: 308
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 357.307
+   }
+
+   Rectangle {
+
+       x: 27
+       y: 299
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 359.37
+   }
+
+   Rectangle {
+
+       x: 28
+       y: 290
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 0.765
+   }
+
+   Rectangle {
+
+       x: 30
+       y: 280
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 2.687
+   }
+
+   Rectangle {
+
+       x: 31
+       y: 270
+       width: 18
+       height: 5
+       color: clor
+       radius: 4
+       rotation: 10.037
+   }
+
+   Rectangle {
+
+       x: 32
+       y: 261
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 11.566
+   }
+
+   Rectangle {
+
+       x: 34
+       y: 252
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 10.965
+   }
+
+   Rectangle {
+
+       x: 37
+       y: 244
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 15.135
+   }
+
+   Rectangle {
+
+       x: 41
+       y: 236
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 14.132
+   }
+   Rectangle {
+
+
+          x: 43
+          y: 222
+          width: 25
+          height: 8
+          color: clor
+          radius: 4
+          rotation: 21.506
+      }
+
+   Rectangle {
+
+       x: 54
+       y: 200
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 28.309
+   }
+
+   Rectangle {
+
+       x: 80
+       y: 158
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 30.492
+   }
+
+
+
+   Rectangle {
+
+       x: 111
+       y: 121
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 45.068
+   }
+
+   Rectangle {
+
+          x: 130
+          y: 103
+          width: 18
+          height: 5
+          color: clor
+          radius: 4
+          rotation: 47.223
+      }
+   Rectangle {
+
+       x: 149
+       y: 88
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 55.734
+   }
+
+
+   Rectangle {
+
+       x: 166
+       y: 75
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 60.249
+   }
+   Rectangle {
+
+       x: 192
+       y: 63
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 66.154
+   }
+   Rectangle {
+
+       x: 92
+       y: 136
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 43.067
+   }
+   Rectangle {
+
+       x: 64
+       y: 178
+       width: 18
+       height: 5
+       color: clor
+       radius: 4
+       rotation: 31.408
+   }
+   Rectangle {
+
+           x: 214
+           y: 54
+           width: 18
+           height: 5
+           color: clor
+           radius: 4
+           rotation: 75.654
+       }
+   Rectangle {
+
+       x: 238
+       y: 48
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 77.493
+   }
+   Rectangle {
+
+       x: 257
+       y: 41
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 83.517
+   }
+
+   Rectangle {
+
+       x: 287
+       y: 39
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 88.902
+   }
+   Rectangle {
+
+        x: 309
+        y: 37
+        width: 18
+        height: 5
+        color: clor
+        radius: 4
+        rotation: 89.861
+    }
+   Rectangle {
+
+       x: 336
+       y: 39
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: 92.981
+   }
+   Rectangle {
+
+       x: 355
+       y: 42
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 102.058
+   }
+
+   Rectangle {
+
+       x: 385
+       y: 44
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: -253.946
+   }
+   Rectangle {
+
+       x: 407
+       y: 52
+       width: 18
+       height: 5
+       color: clor
+       radius: 4
+       rotation: 109.306
+   }
+
+   Rectangle {
+
+       x: 431
+       y: 63
+       width: 15
+       height: 3
+       color: clor
+       radius: 4
+       rotation: -236.851
+   }
+
+   Rectangle {
+
+       x: 446
+       y: 70
+       width: 25
+       height: 8
+       color: clor
+       radius: 4
+       rotation: 123.698
+   }
+
+   Rectangle {
+
+         x: 493
+         y: 97
+         width: 18
+         height: 5
+         color: clor
+         radius: 4
+         rotation: -225.146
+     }
+   Rectangle {
+
+           x: 523
+           y: 136
+           width: 25
+           height: 8
+           color: clor
+           radius: 4
+           rotation: 143.401
+       }
+   Rectangle {
+
+       x: 557
+       y: 171
+       width: 18
+       height: 5
+       color: clor
+       radius: 4
+       rotation: -203.316
+   }
+
+       Rectangle {
+
+           x: 570
+           y: 217
+           width: 25
+           height: 8
+           color: clor
+           radius: 4
+           rotation: -196.423
+       }
+       Rectangle {
+
+           x: 589
+           y: 265
+           width: 18
+           height: 5
+           color: clor
+           radius: 4
+           rotation: -185.493
+       }
+
+       Rectangle {
+
+           x: 589
+           y: 311
+           width: 25
+           height: 8
+           color: clor
+           radius: 4
+           rotation: -180.17
+       }
+
+
+       Rectangle {
+
+           x: 593
+           y: 363
+           width: 18
+           height: 5
+           color: clor
+           radius: 4
+           rotation: -166.509
+       }
+       Rectangle {
+
+           x: 570
+           y: 407
+           width: 25
+           height: 8
+           color: clor
+           radius: 4
+           rotation: 199.811
+       }
+
+   Text {
+
+       x: 183
+       y: 501
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("0")
+       font.pixelSize: 46
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 115
+       y: 445
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("20")
+       font.pixelSize: 46
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 73
+       y: 373
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("40")
+       font.pixelSize: 46
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 57
+       y: 291
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("60")
+       font.pixelSize: 46
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 74
+       y: 210
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("80")
+       font.pixelSize: 46
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 104
+       y: 143
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("100")
+       font.pixelSize: 41
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 171
+       y: 89
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("120")
+       font.pixelSize: 41
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 246
+       y: 58
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("140")
+       font.pixelSize: 41
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 328
+       y: 57
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("160")
+       font.pixelSize: 41
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 408
+       y: 87
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("180")
+       font.pixelSize: 41
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 477
+       y: 150
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("200")
+       font.pixelSize: 40
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 500
+       y: 217
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("220")
+       font.pixelSize: 40
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 515
+       y: 299
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("240")
+       font.pixelSize: 40
+       font.family: "Arial"
+   }
+
+   Text {
+
+       x: 500
+       y: 387
+       width: 33
+       height: 61
+       color: clor
+       text: qsTr("260")
+       font.pixelSize: 40
+       font.family: "Arial"
+   }
+   /**************////////////////////////*****************************************************************/
     Rectangle {
         visible: false
         id: rectangle2
@@ -520,7 +1431,7 @@ Item {
         rotation: 14.132
     }
     Rectangle {
-         //  visible: false
+           visible: false
            objectName: "k40"
            id: rectangle6
            x: 43

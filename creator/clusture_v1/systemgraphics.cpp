@@ -7,6 +7,72 @@ SystemGraphics::SystemGraphics(QObject *parent)
 
 }
 
+
+void SystemGraphics::setWeather(weather_t wthr)
+{
+    QObject* ob2 = myobj->findChild<QObject*>("weather UI");
+    ob2->setProperty("weather",QString::number(wthr.weather));
+    ob2->setProperty("rainPercent",QString::number(wthr.rainPercent));
+    ob2->setProperty("country",wthr.Country);
+    ob2->setProperty("city",wthr.City);
+    ob2->setProperty("weatherInfo",wthr.info);
+
+    if(wthr.img=="cloudy night")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/cloudy.png");
+    }
+    if(wthr.img=="night and day")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/day_night.png");
+    }
+    if(wthr.img=="eclipse")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/eclipse.png");
+    }
+    if(wthr.img=="rainy")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/humidity.png");
+    }
+    if(wthr.img=="cloudy moon")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/moon_cloudy.png");
+    }
+    if(wthr.img=="moon with stars")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/moon.png");
+    }
+    if(wthr.img=="moon with golden stars")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/moon_2.png");
+    }
+    if(wthr.img=="cloudy rain")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/rain.png");
+    }
+    if(wthr.img=="sunny cloudy night")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/rainy-day.png");
+    }
+    if(wthr.img=="sunny")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/sun.png");
+    }
+    if(wthr.img=="cloudy humidy day")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/sun_cloudy2.png");
+    }
+    if(wthr.img=="cloudy day")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/sun_cloudy.png");
+    }
+    if(wthr.img=="super sunny")
+    {
+        ob2->setProperty("w_image","qrc:/images/weather/sunny.png");
+    }
+
+
+}
+
 void SystemGraphics::setKmhValue(int val)
 {
     QObject* ob2 = myobj->findChild<QObject*>("kmhElement");
@@ -68,9 +134,12 @@ void SystemGraphics::openMenu()
 
 }
 
-void SystemGraphics::openUI(uis_t page)
+void SystemGraphics::openUI(int page)
 {
+    //QObject *o=myobj->findChild<QObject*>("ui navigatorr");
+
     QObject* ob2 = myobj->findChild<QObject*>("ui navigator");
+    ob2->setProperty("visible","true");
     ob2->setProperty("navigate","true");
     ob2->setProperty("ui_curr",page);
 
@@ -152,3 +221,30 @@ void SystemGraphics::setMusicPath(QString path)
      ob2->setProperty("s_toAdd",musicList);
      ob2->setProperty("s2_toAdd",musicSources);
 }
+
+void SystemGraphics::setCaller(QString img_path, QString name)
+{
+     QObject* ob2 = myobj->findChild<QObject*>("callerUI");
+     ob2->setProperty("callerIMG",img_path);
+     ob2->setProperty("callerName",name);
+     QObject* ob3 = myobj->findChild<QObject*>("ui navigator");
+     ob3->setProperty("ui_curr",1);
+     ob3->setProperty("navigate","true");
+
+}
+
+void SystemGraphics::setWeather(int weather, QString w_Img, QString w_country, QString w_city, QString w_info, float w_rainPercent)
+{
+    QObject* ob2 = myobj->findChild<QObject*>("weather UI");
+    ob2->setProperty("weather",QString::number(weather));
+    ob2->setProperty("rainPercent",QString::number(w_rainPercent));
+    ob2->setProperty("country",w_country);
+    ob2->setProperty("city",w_city);
+    ob2->setProperty("weatherInfo",w_info);
+    ob2->setProperty("w_image",w_Img);
+
+
+
+}
+
+

@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
-import QtQuick.Controls
-
+import QtQuick.Controls 2.15
+import QtGraphicalEffects 1.15
 
 
 
@@ -79,6 +79,8 @@ ApplicationWindow {
         UiNavigator
         {
             id:uinavi
+            objectName: "ui navigatorr"
+            visible: false
 
 
         }

@@ -1,7 +1,9 @@
 import QtQuick 2.15
-import QtMultimedia
-import QtQuick.Layouts
-import QtQuick.Controls
+import QtMultimedia 5.15
+import QtQuick.Layouts 1.15
+import QtQuick.Controls 2.15
+
+
 Rectangle{
    // anchors.fill: parent
     id:root
@@ -48,6 +50,10 @@ Rectangle{
     ListModel
     {
          id :myModel
+//         ListElement{
+//             name:"ahaxfdjghasodjvbskdvbsdkjvfbkjdijevgjdhfgvkfgbkeadbfehdrvgoedrhgorhfgleihglaeihgleirgeakrfglark;hg/kflgl;kfs"
+//             source:"fuck you"
+//         }
 
 
     }
@@ -57,15 +63,14 @@ Rectangle{
     }
 
 
-    ColumnLayout {
+    Item  {
 
         anchors.fill: parent
-        MediaPlayer
+        Audio
         {
-              id: playMusic
-              source: "C:/Users/Maher/Desktop/Nader Hany/music/Compilations/Whiskey Blues   Best of Slow Blues Rock #2.mp3"
-              audioOutput: AudioOutput {}
-          }
+                id: playMusic
+                source: ""
+        }
         Rectangle
         {
             id:hdr
@@ -126,7 +131,7 @@ Rectangle{
       highlight: Rectangle { color: "#03fcf0"; radius: 5 ;opacity: 0.3;}
 
 
-      delegate: RowLayout {
+      delegate: Item {
           id :dlgt
           height:25
           width:root.width
@@ -167,6 +172,7 @@ Rectangle{
                  text: name
                  color: "white"
                  font.pixelSize: 16
+
                  wrapMode:  TextEdit.Wrap
                  onTextChanged: {
                      if (text.length > 40) {

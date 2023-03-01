@@ -1,5 +1,5 @@
 import QtQuick 2.15
-import QtQuick.Controls
+import QtQuick.Controls 2.15
 
 Rectangle
 {
@@ -27,7 +27,7 @@ Rectangle
 //                case 2: stack.clear();stack.push(ui2);break;
 //                case 3: stack.clear();stack.push(ui3);break;
 //                case 4: stack.clear();stack.push(ui4);break;
-                case 0: stack.push("EngineStatus.qml");break;
+                case 0: stack.push("SystemInfo.qml");break;
                 case 1: stack.push("CallAnswering.qml");break;
                 case 2: stack.push("GpsMap.qml");break;
                 case 3: stack.push("WeatherForecast.qml");break;
@@ -40,7 +40,7 @@ Rectangle
 
     StackView {
            id: stack
-           initialItem: "MusicPlayer.qml"
+           initialItem: "SystemInfo.qml"
            anchors.fill: parent
 
 

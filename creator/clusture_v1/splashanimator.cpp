@@ -7,12 +7,12 @@ SplashAnimator::SplashAnimator(QObject *parent)
     objj= parent;
     tmr=new QTimer();
     connect(tmr, SIGNAL(timeout()), this, SLOT(kmhRendering()));
-    tmr->setInterval(6);
+    tmr->setInterval(15);
     //tmr->start();
 
     tmr2=new QTimer();
     connect(tmr2, SIGNAL(timeout()), this, SLOT(kmhRendering2()));
-    tmr2->setInterval(3);
+    tmr2->setInterval(5);
     //tmr2->start();
 
     tmr3=new QTimer();
@@ -22,7 +22,7 @@ SplashAnimator::SplashAnimator(QObject *parent)
 
     tmr4=new QTimer();
     connect(tmr4, SIGNAL(timeout()), this, SLOT(RpmRendering2()));
-    tmr4->setInterval(3);
+    tmr4->setInterval(5);
    // tmr4->start();
 
 

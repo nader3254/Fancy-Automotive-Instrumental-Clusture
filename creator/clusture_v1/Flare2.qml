@@ -38,10 +38,14 @@ Image {
     opacity:0
     NumberAnimation on opacity {
         id:t1_animate
+        running: false
         duration: 0
         from: 1
         to: 0
-        onFinished: {
+        onFinished:
+        {
+
+            gotoui.start()
 
         }
 
@@ -49,10 +53,12 @@ Image {
     }
     NumberAnimation on opacity {
         id:t1_animate2
+        running: false
         duration: 0
         from: 0
         to: 1
-        onFinished: {
+        onFinished:
+        {
             t1_animate.start()
         }
     }
@@ -63,13 +69,30 @@ Image {
         interval: 1;running: false;repeat: false
         onTriggered:
         {
-            t1_animate.duration=2000
-            t1_animate2.duration=2000
+            t1_animate.duration=4000
+            t1_animate2.duration=1000
             t1_animate2.start()
+
 
         }
     }
 
+    Timer
+    {
+
+        id:gotoui
+        interval: 1;running: false;repeat: false
+        onTriggered:
+        {
+
+            GraphicsController.openUI(3);
+            t1_animate2.running=false
+            t1_animate.running=false
+
+
+
+        }
+    }
 }
 
 

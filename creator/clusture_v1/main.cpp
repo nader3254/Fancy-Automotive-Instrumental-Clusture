@@ -3,13 +3,21 @@
 #include <QQmlContext>
 #include "splashanimator.h"
 #include "systemgraphics.h"
+#include <QGeoServiceProvider>
 
 int main(int argc, char *argv[])
 {
+
+ //   QGuiApplication app(argc, argv);
+
+
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
     QGuiApplication app(argc, argv);
+
+    app.setOrganizationName("nader");
+    app.setOrganizationDomain("nader2");
 
   //  qmlRegisterType<SplashAnimator>("dash.graphics",1,0,"SplashAnimator");    //take care
     QQmlApplicationEngine engine;
@@ -29,6 +37,9 @@ int main(int argc, char *argv[])
    QQmlApplicationEngine *eng=&engine;
    eng->rootContext()->setContextProperty("F1Animation",MyAnimator);
    eng->rootContext()->setContextProperty("GraphicsController",myGraphics);
+
+  // QGeoServiceProvider::setApplicationName("MyApp");
+
 
     return app.exec();
 }
