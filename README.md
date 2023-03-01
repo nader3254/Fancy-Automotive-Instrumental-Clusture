@@ -34,6 +34,8 @@ last update :25-2-2023
 
 6- find out why mapbox plugin didnt work ??
 
+7- combie all qml files in one directory
+
 
 
 
