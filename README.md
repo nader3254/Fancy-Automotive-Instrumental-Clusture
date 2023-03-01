@@ -30,6 +30,10 @@ last update :25-2-2023
 
 4- add kmh text and rpm text
 
+5- music player progress bar
+
+6- find out why mapbox plugin didnt work ??
+
 
 
 
