@@ -86,8 +86,8 @@ Image {
         {
 
             GraphicsController.openUI(3);
-            t1_animate2.running=false
-            t1_animate.running=false
+           // t1_animate2.running=false
+          //  t1_animate.running=false
 
 
 

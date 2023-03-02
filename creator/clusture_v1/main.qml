@@ -11,11 +11,9 @@ ApplicationWindow {
     visible: true
 
     property bool en_menu: cb.mnu
-//    property bool _upS: false
-//    property bool _downS: false
-//    property bool _leftS: false
-//    property bool _rightS: false
-//    property bool _okS: false
+
+
+
 
     Rectangle{
         anchors.fill: parent
@@ -70,17 +68,17 @@ ApplicationWindow {
         MidUiNavigator
         {
             id:midnav
-            visible: en_menu
-            _upS:cb.upS
-            _downS:cb.downS
-            _okS:cb.okS
+           // visible: en_menu
+           // _upS:cb.upS
+           // _downS:cb.downS
+            //_okS:cb.okS
 
         }
         UiNavigator
         {
             id:uinavi
-            objectName: "ui navigatorr"
-            visible: false
+
+
 
 
         }

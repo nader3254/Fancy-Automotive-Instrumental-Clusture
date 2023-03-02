@@ -5,6 +5,11 @@ SystemGraphics::SystemGraphics(QObject *parent)
 {
         myobj=parent;
 
+//        clockTimer=new QTimer();
+//        connect(clockTimer, SIGNAL(timeout()), this, SLOT(updateClock()));
+//        clockTimer->setInterval(1);
+
+
 }
 
 
@@ -119,6 +124,13 @@ void SystemGraphics::setFrameFlashSpeed(int mode)
 
 void SystemGraphics::updateClock()
 {
+    QDateTime dt=QDateTime::currentDateTime();
+    QString date =dt.date().toString();
+    QString time =dt.time().toString();
+
+    QObject* ob2 = myobj->findChild<QObject*>("weather UI");
+    ob2->setProperty("date",date);
+    ob2->setProperty("time",time);
 
 
 }
@@ -131,7 +143,27 @@ void SystemGraphics::setTemprature(int vall)
 void SystemGraphics::openMenu()
 {
 
+    QObject* ob2 = myobj->findChild<QObject*>("Menu Navigator");
+    ob2->setProperty("visible","true");
 
+}
+
+void SystemGraphics::menuMoovUp()
+{
+    QObject* ob2 = myobj->findChild<QObject*>("Menu Navigator");
+    ob2->setProperty("_upS","true");
+}
+
+void SystemGraphics::menuMoovDown()
+{
+    QObject* ob2 = myobj->findChild<QObject*>("Menu Navigator");
+    ob2->setProperty("_downS","true");
+}
+
+void SystemGraphics::menuSelectCurrItem()
+{
+    QObject* ob2 = myobj->findChild<QObject*>("Menu Navigator");
+    ob2->setProperty("_okS","true");
 }
 
 void SystemGraphics::openUI(int page)
@@ -141,8 +173,16 @@ void SystemGraphics::openUI(int page)
     QObject* ob2 = myobj->findChild<QObject*>("ui navigator");
     ob2->setProperty("visible","true");
     ob2->setProperty("navigate","true");
+
     ob2->setProperty("ui_curr",page);
 
+}
+
+void SystemGraphics::closeUis()
+{
+
+    QObject* ob2 = myobj->findChild<QObject*>("ui navigator");
+    ob2->setProperty("visible","false");
 }
 
 void SystemGraphics::setMusicPath(QString path)

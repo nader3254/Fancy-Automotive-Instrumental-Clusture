@@ -11,6 +11,7 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QJsonValue>
+#include <QDateTime>
 #include "utilities/filebrowser.h"
 #include <QThread>
 
@@ -63,6 +64,7 @@ signals:
 
 private:
 QObject *myobj;
+QTimer *clockTimer;
 
 public slots:
 void setKmhValue(int val);
@@ -72,7 +74,11 @@ void setFrameFlashSpeed(int mode);
 void updateClock();
 void setTemprature(int vall);
 void openMenu();
+void menuMoovUp();
+void menuMoovDown();
+void menuSelectCurrItem();
 void openUI(int page);
+void closeUis();
 void setMusicPath(QString path);
 void setCaller(QString img_path,QString name);
 void setWeather(int weather,QString w_Img,QString w_country,QString w_city,QString w_info,float w_rainPercent);

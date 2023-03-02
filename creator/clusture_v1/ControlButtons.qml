@@ -227,6 +227,8 @@ Rectangle
             text: "Menu"
             onClicked:
             {
+              GraphicsController.closeUis();
+              GraphicsController.openMenu();
               mnu=true
             }
 
@@ -244,6 +246,7 @@ Rectangle
             {
                 upS=true
                 ttt.start()
+                GraphicsController.menuMoovUp();
 
             }
 
@@ -261,7 +264,7 @@ Rectangle
             {
                 downS=true
                 ttt.start()
-
+                GraphicsController.menuMoovDown();
             }
 
         }
@@ -277,6 +280,7 @@ Rectangle
             onClicked:
             {
                 okS=true
+                GraphicsController.menuSelectCurrItem();
 
             }
 

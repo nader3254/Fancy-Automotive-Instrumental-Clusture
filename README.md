@@ -2,7 +2,7 @@
 
 this project aims to design basic automotive instrumental clusture with some fancy animation
 
-last update :25-2-2023
+last update :2-3-2023
 
 
 ## Achievements
@@ -20,21 +20,28 @@ last update :25-2-2023
 
 7- fancy music player that can change path and play/stop music
 
-8- added  whether displayer - gps indicator map - call answering - syste,  info   
+8- added  whether displayer   
+
+9- music progress bar
+
+10- gps indicator map sponsered by OSM (open street maps) 
+
+11- call answering ui to answer incomming calls
+
+
 
 ## Future Working 
 
-1- Stop engine animation should contain off lights for speedometers
+1- Stop engine animation 
 
 2- control fuel and battery indicators
 
-4- add kmh text and rpm text
+5- find out why mapbox plugin didnt work ??
 
-5- music player progress bar
+6- combie all qml files in one directory
 
-6- find out why mapbox plugin didnt work ??
 
-7- combie all qml files in one directory
+
 
 
 

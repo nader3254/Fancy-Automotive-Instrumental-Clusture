@@ -8,6 +8,8 @@ import QtQml 2.15
 Rectangle
 {
     id:root
+    objectName: "Menu Navigator"
+    visible: false
     width: 280
     height: 220
     color: "transparent" //for test
@@ -30,18 +32,43 @@ Rectangle
             if(_upS==true)
             {
                 pv.decrementCurrentIndex()
-                //_upS=false
+                _upS=false
             }
             if(_downS==true)
             {
                 pv.incrementCurrentIndex()
-               // _downS=false
+                _downS=false
             }
             if(_okS==true)
             {
                 console.log("else selected is",pvModel.get(pv.currentIndex).name)
-               // _okS=false
+               if(pvModel.get(pv.currentIndex).name==="Music Player")
+               {
+                   GraphicsController.openUI(4);
+                   root.visible=false
 
+               }
+               if(pvModel.get(pv.currentIndex).name==="Weather Forecast")
+               {
+                   GraphicsController.openUI(3);
+                   root.visible=false
+               }
+               if(pvModel.get(pv.currentIndex).name==="GPS Map")
+               {
+                   GraphicsController.openUI(2);
+                   root.visible=false
+               }
+               if(pvModel.get(pv.currentIndex).name==="Phone Calls")
+               {
+                   GraphicsController.openUI(1);
+                   root.visible=false
+               }
+               if(pvModel.get(pv.currentIndex).name==="System Info")
+               {
+                   GraphicsController.openUI(0);
+                   root.visible=false
+               }
+               _okS=false
             }
 
         }

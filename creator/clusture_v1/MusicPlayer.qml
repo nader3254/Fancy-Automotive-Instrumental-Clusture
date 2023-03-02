@@ -28,7 +28,7 @@ Rectangle{
 
                 for(let i in x)
                 {
-                    if(x[i]!="")
+                    if(x[i]!=="")
                     {
                         myModel.append({"name":x[i],"source":y[i]})
                         console.log(x[i])
@@ -39,7 +39,20 @@ Rectangle{
                 s_toAdd=""
                 s2_toAdd=""
                 toAdd=false
+                playMusic.source=myModel.get(0).source;
             }
+        }
+    }
+    Timer
+    {
+        id:tmry2
+        interval: 1;running: true;repeat: true
+        onTriggered:
+        {
+            //normalization
+            let norm=((playMusic.position-0)/(playMusic.duration-0));
+            musicSlider.width=(norm*parent.width)
+
         }
     }
 
@@ -226,6 +239,13 @@ Rectangle{
         anchors.top: myList.bottom
         anchors.topMargin: 60
         anchors.left: parent.left
+        Rectangle{
+            id:musicSlider2
+            width: parent.width
+            height: 4
+            color: "#1f1f1f"
+
+        }
         Rectangle{
             id:musicSlider
             width: parent.width

@@ -11,21 +11,21 @@ Rectangle{
 
     property bool oppened: false
 
-    onOpacityChanged:
-    {
+//    onOpacityChanged:
+//    {
 
-        if(oppened==true)
-        {
-            callMidAnimation.start()
+//        if(oppened==true)
+//        {
+//            callMidAnimation.start()
 
-        }
-        else
-        {
-            callMidAnimation.stop()
-        }
+//        }
+//        else
+//        {
+//            callMidAnimation.stop()
+//        }
 
-        oppened=!oppened
-    }
+//        oppened=!oppened
+//    }
 
     Rectangle
     {
@@ -83,6 +83,23 @@ Rectangle{
                 source: "qrc:/images/call_da.png"
                 fillMode: Image.Stretch
             }
+            MouseArea
+            {
+                anchors.fill: parent
+                onClicked:
+                {
+                    a2.start()
+                    console.log("call accepted")
+
+                }
+            }
+            NumberAnimation on opacity
+            {
+                id:a2
+                duration: 200
+                from: 0
+                to: 1
+            }
 
         }
         Rectangle
@@ -106,7 +123,7 @@ Rectangle{
             }
             PropertyAnimation on opacity {
                 id:aMA
-                running: false
+              //  running: false
                 duration: 2000
                 from: 1
                 to: 0
@@ -120,7 +137,7 @@ Rectangle{
             }
             PropertyAnimation on opacity {
                 id:callMidAnimation
-                running: false
+                //running: false
                 duration: 2000
                 from: 0
                 to: 1
@@ -146,6 +163,22 @@ Rectangle{
                 scale: 0.6
                 source: "qrc:/images/call_da.png"
                 fillMode: Image.Stretch
+            }
+            MouseArea
+            {
+                anchors.fill: parent
+                onClicked:
+                {
+                    a3.start()
+                    console.log("call rejected")
+                }
+            }
+            NumberAnimation on opacity
+            {
+                id:a3
+                duration: 200
+                from: 0
+                to: 1
             }
         }
 

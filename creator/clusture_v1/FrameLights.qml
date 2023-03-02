@@ -368,7 +368,7 @@ Item {
                      else
                      {
                           F1Animation.startFlare1Animation()
-                         // fcolor="#14e1d5"
+                          fcolor="#14e1d5"
                          //here i can set color in custom
                      }
 

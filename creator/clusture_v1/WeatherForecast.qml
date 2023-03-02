@@ -2,17 +2,33 @@ import QtQuick 2.15
 
 Rectangle{
 
+    id:root
     objectName: "weather UI"
     color: "transparent"
     property string date: "Wed. April 18th"
     property string time: "16:22"
     property string weather:"21"
-    property string w_image: "qrc:/images/weather/sunny.png"
+    property string w_image: "qrc:/images/weather/sun_cloudy.png"
     property string country: "Egypt"
     property string city: "Nasr City "
     property string rainPercent: "20"
     property string weatherInfo: " It is sunny today"
+    property bool clk: true
 
+    Timer
+    {
+     id:clockUpdater
+     interval: 1;running: clk;repeat: true
+     onTriggered:
+     {
+        if(root.opacity===1)
+        {
+            GraphicsController.updateClock();
+        }
+
+
+     }
+    }
 
     Text
     {
@@ -29,7 +45,7 @@ Rectangle{
         anchors.top: parent.top
         anchors.topMargin: 3
         anchors.left: parent.right
-        anchors.rightMargin: 0
+        anchors.leftMargin:  -30
         color: "white"
         text: time
         font.pixelSize: 16

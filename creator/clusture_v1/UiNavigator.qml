@@ -8,6 +8,7 @@ Rectangle
     height: 220
     color: "transparent" //for test
     objectName: "ui navigator"
+    visible: false
     x:(parent.width/2)-143
     y:87
     property int ui_curr: 0
@@ -22,15 +23,10 @@ Rectangle
             {
                 switch(ui_curr)
                 {
-//                case 0: stack.clear();stack.push(ui0);break;
-//                case 1: stack.clear();stack.push(ui1);break;
-//                case 2: stack.clear();stack.push(ui2);break;
-//                case 3: stack.clear();stack.push(ui3);break;
-//                case 4: stack.clear();stack.push(ui4);break;
                 case 0: stack.push("SystemInfo.qml");break;
                 case 1: stack.push("CallAnswering.qml");break;
                 case 2: stack.push("GpsMap.qml");break;
-                case 3: stack.push("WeatherForecast.qml");break;
+                case 3: stack.push("WeatherForecast.qml",{"clk":true});break;
                 case 4: stack.push("MusicPlayer.qml");break;
                 }
                 navigate=false
