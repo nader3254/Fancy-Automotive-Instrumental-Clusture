@@ -33,6 +33,13 @@
 #define WEATHER_SUPER_SUNNY                  "super sunny"
 
 
+#define UI_WEATHET_FORECAST           3
+#define UI_GPS_MAPS                   2
+#define UI_MUSIC_PLAYER               4
+#define UI_CALL_ANSWERING             1
+#define UI_SYSTEM_INFO                0
+
+
 class SystemGraphics : public QObject
 {
     Q_OBJECT

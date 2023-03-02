@@ -361,4 +361,70 @@ Rectangle
             }
 
         }
+
+        property string tiimg: ""
+        Timer
+        {
+            id:tochange
+            interval: 1;running: false;repeat: false
+            onTriggered:
+            {
+
+            }
+        }
+
+        ComboBox {
+            id:combo
+            anchors.bottom: power_on.top
+            anchors.bottomMargin: 40
+            anchors.left: m_path.right
+            anchors.leftMargin:4
+            editable: false
+            width:350
+            model: ListModel {
+                id: model
+                ListElement { text: "qrc:/images/weather/cloudy.png" }
+                ListElement { text: "qrc:/images/weather/day_night.png" }
+                ListElement { text: "qrc:/images/weather/eclipse.png" }
+                ListElement { text: "qrc:/images/weather/humidity.png" }
+                ListElement { text: "qrc:/images/weather/moon_cloudy.png" }
+                ListElement { text: "qrc:/images/weather/moon.png" }
+                ListElement { text: "qrc:/images/weather/moon_2.png" }
+                ListElement { text: "qrc:/images/weather/rain.png" }
+                ListElement { text: "qrc:/images/weather/rainy-day.png" }
+                ListElement { text: "qrc:/images/weather/sun.png" }
+                ListElement { text: "qrc:/images/weather/sun_cloudy2.png" }
+                ListElement { text: "qrc:/images/weather/sun_cloudy.png" }
+                ListElement { text: "qrc:/images/weather/sunny.png" }
+
+            }
+            onAccepted:
+            {
+
+              // GraphicsController.
+            }
+            onCurrentIndexChanged: {
+
+            }
+            onCurrentTextChanged:
+            {
+
+                tiimg =model.get(currentIndex).text;
+//                tochange.start()
+
+                let weather=37;let rp=50.7;
+                let country="Egypt";let city="Naser City";
+                let status="it will be rainy today";
+                GraphicsController.setWeather(weather,model.get(currentIndex).text,country,city,status,rp)
+
+            }
+
+            Text{
+                anchors.bottom: parent.top
+                anchors.bottomMargin: 5
+                color: "white"
+                text: "select weather image"
+                font.pixelSize: 16
+            }
+        }
 }
