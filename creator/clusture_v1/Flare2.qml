@@ -69,7 +69,7 @@ Image {
         interval: 1;running: false;repeat: false
         onTriggered:
         {
-            t1_animate.duration=4000
+            t1_animate.duration=1000
             t1_animate2.duration=1000
             t1_animate2.start()
 

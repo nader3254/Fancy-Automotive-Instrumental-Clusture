@@ -112,13 +112,13 @@ Rectangle
 
 
                     PathLine { x: parent.x+150; y: parent.y+30*2 }
-                    PathAttribute { name: "opacity"; value: 0.15 }
+                    PathAttribute { name: "opacity"; value: 0.35 }
                     PathAttribute { name: "scale"; value: 1.5}
                     PathAttribute { name: "height"; value: 36 }
                     //PathAttribute { name: "color"; value: 000000 }
 
                     PathLine { x: parent.x+150; y: parent.y+30*1 }
-                    PathAttribute { name: "opacity"; value: 0.15 }
+                    PathAttribute { name: "opacity"; value: 0.35 }
                     PathAttribute { name: "scale"; value: 0.5 }
                     PathAttribute { name: "height"; value: 36 }
                     //PathAttribute { name: "color"; value: 111111 }
@@ -126,14 +126,14 @@ Rectangle
 
 
                     PathLine { x: parent.x+150; y: parent.y+30*9 }
-                    PathAttribute { name: "opacity"; value: 0.1 }
+                    PathAttribute { name: "opacity"; value: 0.3 }
                     PathAttribute { name: "scale"; value: 1.5 }
                     PathAttribute { name: "height"; value: 36 }
                     //PathAttribute { name: "color"; value: 000000 }
 
 
                     PathLine { x: parent.x+150; y: parent.y+30*10 }
-                    PathAttribute { name: "opacity"; value: 0.1}
+                    PathAttribute { name: "opacity"; value: 0.3}
                     PathAttribute { name: "scale"; value: 0.5 }
                     PathAttribute { name: "height"; value: 36 }
                     //PathAttribute { name: "color"; value: 000000 }

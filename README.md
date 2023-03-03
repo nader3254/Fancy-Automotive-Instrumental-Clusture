@@ -32,8 +32,6 @@ last update :2-3-2023
 
 ## Future Working 
 
-1- Stop engine animation 
-
 2- control fuel and battery indicators
 
 5- find out why mapbox plugin didnt work ??

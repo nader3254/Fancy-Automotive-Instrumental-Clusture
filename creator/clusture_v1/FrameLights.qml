@@ -121,7 +121,7 @@ Item {
 
            }
     }
-    //main frame timer
+    //main frame timer 1
     Timer {
         id:tmr2
         objectName: "FrameLights2"
@@ -130,67 +130,67 @@ Item {
            {
 
 
-               //upper mid right
-               if(mid_up_r.width<261)
-               {
-                   let x=mid_up_r.width;x++;
-                   mid_up_r.width=x;
+//               //upper mid right
+//               if(mid_up_r.width<261)
+//               {
+//                   let x=mid_up_r.width;x++;
+//                   mid_up_r.width=x;
 
-               }
-               else
-               {
-                   //right_left_up
-                   if(right_left_up.height<170)
-                   {
-                       let x=right_left_up.height;x++;
-                       right_left_up.height=x;
+//               }
+//               else
+//               {
+//                   //right_left_up
+//                   if(right_left_up.height<170)
+//                   {
+//                       let x=right_left_up.height;x++;
+//                       right_left_up.height=x;
 
-                   }
-                   else
-                   {
-                       //right_left_down
-                       if(right_left_down.height<23)
-                       {
-                           let x=right_left_down.height;x++;
-                           right_left_down.height=x;
+//                   }
+//                   else
+//                   {
+//                       //right_left_down
+//                       if(right_left_down.height<23)
+//                       {
+//                           let x=right_left_down.height;x++;
+//                           right_left_down.height=x;
 
-                       }
+//                       }
 
-                   }
-               }
+//                   }
+//               }
 
-               //upper mid left
-               if(mid_up_l.width<252)
-               {
-                   let x=mid_up_l.width;x++;
-                   let y=mid_up_l.x;y--;
-                   mid_up_l.width=x;
-                   mid_up_l.x=y;
+//               //upper mid left
+//               if(mid_up_l.width<252)
+//               {
+//                   let x=mid_up_l.width;x++;
+//                   let y=mid_up_l.x;y--;
+//                   mid_up_l.width=x;
+//                   mid_up_l.x=y;
 
-               }
-               else
-               {
-                   //left_right_up
-                   if(left_right_up.height<153)
-                   {
-                       let x=left_right_up.height;x++;
-                       left_right_up.height=x;
+//               }
+//               else
+//               {
+//                   //left_right_up
+//                   if(left_right_up.height<153)
+//                   {
+//                       let x=left_right_up.height;x++;
+//                       left_right_up.height=x;
 
-                   }
-                   else
-                   {
-                       //left_right_down
-                       if(left_right_down.height<135)
-                       {
-                           let x=left_right_down.height;x++;
-                           left_right_down.height=x;
+//                   }
+//                   else
+//                   {
+//                       //left_right_down
+//                       if(left_right_down.height<135)
+//                       {
+//                           let x=left_right_down.height;x++;
+//                           left_right_down.height=x;
 
 
 
-                       }
+//                       }
 
-                   }
-               }
+//                   }
+//               }
 
 
            }
@@ -205,59 +205,59 @@ Item {
 
 
 
-               if(mid_down_l.width<164)
-               {
-                   let x=mid_down_l.width;x++;
-                   let y=mid_down_l.x;y--;
-                   mid_down_l.width=x;
-                   mid_down_l.x=y;
-                   mid_down_r.width=x+4;
-               }
-               else{
+//               if(mid_down_l.width<164)
+//               {
+//                   let x=mid_down_l.width;x++;
+//                   let y=mid_down_l.x;y--;
+//                   mid_down_l.width=x;
+//                   mid_down_l.x=y;
+//                   mid_down_r.width=x+4;
+//               }
+//               else{
 
-                   //right speedometer frame
-                   if(right_down.width<341)
-                   {
-                       let x=right_down.width;x++;
-                       right_down.width=x;
+//                   //right speedometer frame
+//                   if(right_down.width<341)
+//                   {
+//                       let x=right_down.width;x++;
+//                       right_down.width=x;
 
-                   }
-                   else
-                   {
-                       if(right_up.width<260)
-                       {
-                           let x=right_up.width;x++;
-                          let y=right_up.x;y--;
-                           right_up.width=x;
-                           right_up.x=y;
+//                   }
+//                   else
+//                   {
+//                       if(right_up.width<260)
+//                       {
+//                           let x=right_up.width;x++;
+//                          let y=right_up.x;y--;
+//                           right_up.width=x;
+//                           right_up.x=y;
 
-                       }
-                   }
+//                       }
+//                   }
 
-                   //left speedometer frame
-                   if(left_down.width<340)
-                   {
-                       let x=left_down.width;x++;
-                       let y=left_down.x;y--;
-                       left_down.width=x;
-                       left_down.x=y;
+//                   //left speedometer frame
+//                   if(left_down.width<340)
+//                   {
+//                       let x=left_down.width;x++;
+//                       let y=left_down.x;y--;
+//                       left_down.width=x;
+//                       left_down.x=y;
 
-                   }
-                   else
-                   {
-                       if(left_up.width<244)
-                       {
-                           let x=left_up.width;x++;
-                           left_up.width=x;
+//                   }
+//                   else
+//                   {
+//                       if(left_up.width<244)
+//                       {
+//                           let x=left_up.width;x++;
+//                           left_up.width=x;
 
-                       }
-                       else
-                       {
-                  //         en_flash1=true
+//                       }
+//                       else
+//                       {
+//                  //         en_flash1=true
 
-                       }
-                   }
-               }
+//                       }
+//                   }
+//               }
 
 
            }
@@ -266,7 +266,7 @@ Item {
     Timer {
         id:tmr3
         objectName: "FrameLights4"
-           interval:120; running: false; repeat: true
+           interval:70; running: false; repeat: true
            onTriggered:
            {
              switch(state)
@@ -507,6 +507,7 @@ Item {
 /*******************************************************/
     Rectangle {
         id: left_right_down
+        objectName: "lrd"
         x: 350
         y: 155
         width: 25
@@ -533,6 +534,7 @@ Item {
 
     Rectangle {
         id: left_right_up
+        objectName: "lru"
         x: 273
         y: 88
         width: 77
@@ -560,6 +562,7 @@ Item {
 
     Rectangle {
         id: right_left_up
+        objectName: "rlu"
         x: 650
         y: 101
         width: 82
@@ -584,6 +587,7 @@ Item {
     }
     Rectangle {
         id: right_left_down
+        objectName: "rld"
         x: 639
         y: 262
         width: 24
@@ -608,6 +612,7 @@ Item {
 
     Rectangle {
         id: mid_down_l
+        objectName: "mdl"
         x: 341+165
         y: 306
         rotation: 360
@@ -634,6 +639,7 @@ Item {
 
     Rectangle {
         id: mid_down_r
+        objectName: "mdr"
         x: 506
         y: 306
         width: 0
@@ -656,6 +662,7 @@ Item {
 
     Rectangle {
         id: left_down
+        objectName: "ld"
         x: 1+341
         y: 234
         width: 0
@@ -679,6 +686,7 @@ Item {
 
     Rectangle {
         id: left_up
+        objectName: "lu"
         x: 0
         y: 58
         width: 0
@@ -703,6 +711,7 @@ Item {
 
     Rectangle {
         id: mid_up_l
+        objectName: "mul"
         x: 246+250
         y: 68
         width: 0
@@ -725,6 +734,7 @@ Item {
 
     Rectangle {
         id: mid_up_r
+        objectName: "mur"
         x: 496
         y: 65
        // width: 261
@@ -750,6 +760,7 @@ Item {
 
     Rectangle {
         id: right_down
+        objectName: "rd"
         x: 674
         y: 230
         //width: 341
@@ -772,6 +783,7 @@ Item {
     }
     Rectangle {
         id: right_up
+        objectName: "ru"
         x: 755+260
         y: 38
       //  width: 260

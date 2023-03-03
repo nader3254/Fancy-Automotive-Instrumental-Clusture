@@ -20,6 +20,7 @@ Rectangle
 
     property int  _navigator: 0
     property bool _ennavigator: false
+    property bool ss: true
 
     color: "transparent"
 
@@ -73,19 +74,31 @@ Rectangle
             }
         }
     }
-//    Timer
-//    {
-//        id:t2
-//        interval: 1;repeat: true;running: false
-//        onTriggered:
-//        {
+    Timer
+    {
+        id:t4
+        interval: 4000;repeat: true;running: true
+        onTriggered:
+        {
+            if(ss===true)
+            {
+                aa1.running=false
+                aa2.running=true
 
-//         _ennavigator=false
+            }
+            else
+            {
+                aa2.running=false
+                aa1.running=true
+            }
 
 
-//        }
-//    }
-        Button {
+
+
+        }
+    }
+        Rectangle
+        {
             id:power_on
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 40
@@ -93,8 +106,50 @@ Rectangle
             anchors.leftMargin:4
             width: 100
             height: 80
-            text: "Start Engine"
-            onClicked: F1Animation.startAnimation();
+            color: "#c5db1a"
+            Text
+            {
+                id: name
+                anchors.centerIn: parent
+                color: "white"
+                font.pixelSize: 16
+                text: "Start Engine"
+            }
+           MouseArea{
+               anchors.fill: parent
+               onClicked:{
+                   if(ss===true)
+                   {
+                     F1Animation.startAnimation();
+                     ss=false;
+                       aa1.running=false
+                       aa2.running=true
+
+                   }
+                   else
+                   {
+                       F1Animation.stopEngine();
+                       GraphicsController.closeUis();
+                       ss=true;
+                       aa2.running=false
+                       aa1.running=true
+                   }
+               }
+           }
+          ColorAnimation on color {id:aa1;running: false; from:"#000000"; to: "#1adb51"; duration: 2000 ;
+              onFinished:
+              {
+                  aa3.start()
+              }
+          }
+          ColorAnimation on color {id:aa3;running: false; from:"#1adb51"; to: "#000000"; duration: 2000 ;}
+          ColorAnimation on color {id:aa2; running: true;from:"#000000"; to: "#db1a68"; duration: 2000
+          onFinished:
+          {
+               aa4.start()
+          }
+          }
+          ColorAnimation on color {id:aa4;running: false; from:"#db1a68"; to: "#000000"; duration: 2000 ;}
         }
         Button {
             id:speedUp
