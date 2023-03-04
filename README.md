@@ -44,18 +44,22 @@ last update :4-3-2023
 ## OverView and OutLook :
 
 the project initaly open in this screen 
+
 ![1](https://user-images.githubusercontent.com/77461625/222870015-f67c0d8d-de25-4ebb-b04c-79c70cea46cc.png)
 
 
 you can switch between uis using this menu 
+
 ![2](https://user-images.githubusercontent.com/77461625/222870031-8dd7b867-cfaa-47f4-9a9d-ff762df65a2f.png)
 
 
 onerview on the Music player Ui 
+
 ![3](https://user-images.githubusercontent.com/77461625/222870035-5666ff27-e926-44ca-b19b-7feb3f5bdd68.png)
 
 
 overview on caller ui
+
 ![5](https://user-images.githubusercontent.com/77461625/222870042-8d1b3b58-b2f6-4718-a917-906f08da93fd.png)
 
 
