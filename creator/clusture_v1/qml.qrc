@@ -1,35 +1,18 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>KmhSpeedometer.qml</file>
-        <file>RpmSpeedometer.qml</file>
-        <file>BatteryIndicator.qml</file>
-        <file>FuelIndicator.qml</file>
         <file>images/background.png</file>
         <file>images/batteryIcon.png</file>
         <file>images/flare1.png</file>
         <file>images/flare2.png</file>
         <file>images/fuelIcon.png</file>
         <file>images/pointer.png</file>
-        <file>KmhElement.qml</file>
-        <file>RpmElement.qml</file>
-        <file>FrameLights.qml</file>
-        <file>Flare2.qml</file>
-        <file>ControlButtons.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>MidUiNavigator.qml</file>
         <file>images/calls.png</file>
         <file>images/gps.png</file>
         <file>images/music.png</file>
         <file>images/status.png</file>
         <file>images/status2.png</file>
         <file>images/weather.png</file>
-        <file>UiNavigator.qml</file>
-        <file>MusicPlayer.qml</file>
-        <file>WeatherForecast.qml</file>
-        <file>GpsMap.qml</file>
-        <file>CallAnswering.qml</file>
-        <file>SystemInfo.qml</file>
         <file>images/music2.png</file>
         <file>images/next.png</file>
         <file>images/pause.png</file>
@@ -57,5 +40,23 @@
         <file>images/weather/umbrella.png</file>
         <file>images/logo.png</file>
         <file>images/logo_2.png</file>
+        <file>qml/BatteryIndicator.qml</file>
+        <file>qml/CallAnswering.qml</file>
+        <file>qml/ControlButtons.qml</file>
+        <file>qml/Flare2.qml</file>
+        <file>qml/FrameLights.qml</file>
+        <file>qml/FuelIndicator.qml</file>
+        <file>qml/GpsMap.qml</file>
+        <file>qml/KmhElement.qml</file>
+        <file>qml/KmhSpeedometer.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/MidUiNavigator.qml</file>
+        <file>qml/MusicPlayer.qml</file>
+        <file>qml/RightElement.qml</file>
+        <file>qml/RpmElement.qml</file>
+        <file>qml/RpmSpeedometer.qml</file>
+        <file>qml/SystemInfo.qml</file>
+        <file>qml/UiNavigator.qml</file>
+        <file>qml/WeatherForecast.qml</file>
     </qresource>
 </RCC>
