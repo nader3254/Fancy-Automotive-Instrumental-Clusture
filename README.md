@@ -8,7 +8,7 @@ like controlling kmh speedometer and rpm speedometer using c++ also you can use 
 
 the qml thanks to the integration of qml integration with c++ provided by qt ,for more details visit https://doc.qt.io/qt-5/qtqml-cppintegration-topic.html
 
-baisicly this cluster is reverse engineered and inispired by this project review introduced in the following link : https://www.youtube.com/watch?v=U-tNUyxL0r4&list=PLGTczECne-Uiv0o_QzESWRH_srKfA_Cxw&index=46&ab_channel=ContinentalAutomotiveGlobal
+baisicly this cluster is inispired by this project review introduced in the following link : https://www.youtube.com/watch?v=U-tNUyxL0r4&list=PLGTczECne-Uiv0o_QzESWRH_srKfA_Cxw&index=46&ab_channel=ContinentalAutomotiveGlobal
 
 thats it lets get started
 
