@@ -14,9 +14,33 @@ thats it lets get started
 
 
 
-last update :3-3-2023 
+last update :4-3-2023 
 
 
+
+
+## Table of Contents
+1. [ OverView And Outlook ](#overview)
+2. [ Getting Started ](#two)
+3. [ Qt Configuration  ](#three) 
+4. [ project structure ](#four) 
+4. [  How to use Graphic services  ](#five) 
+	1. [ Initializing the splash animations  ](#six)  
+	2. [ Controlling KMH speedometer ](#seven)
+	3. [ Controlling RPM speedometer ](#eight)  
+	4. [ Cotrolling Frame Lights ](#nine)  
+	5. [ Controlling the Menu ](#ten)  
+	6. [ Controlling The Uis ](#eleven)  
+	7. [ Controlling Music Player ](#twelve)  
+	8. [ Controlling Caller Uis ](#therteen) 
+	9. [ Controlling The Weather ui ](#fourteen)  	
+4. [ References ](#fifteen)
+
+
+
+
+
+<a name="overview"></a>
 ## OverView and OutLook :
 
 the project initaly open in this screen 
@@ -35,7 +59,7 @@ the whole system animation
 //video 
 
 
-
+<a name="two"></a>
 ## Getting Started 
 
 first of all you can run this project on any target device and any opereating system because
@@ -47,7 +71,8 @@ or you can cross compile the qt framework for any embedded linux device by follo
 in the following video : https://www.youtube.com/watch?v=1M4qFrfuh5s&ab_channel=remnumremnum
 or you can use yocto project you are free to use any method .
 
-# on configuring qt :
+<a name="three"></a>
+## on configuring qt :
 
  make sure you have installed qtmultimedia , qtlocation libraries 
   
@@ -56,7 +81,7 @@ or you can use yocto project you are free to use any method .
 
 
 
-
+<a name="four"></a>
 ## project structure :
  
  the project follow this structure illustrated in the image  below:
@@ -69,7 +94,7 @@ or you can use yocto project you are free to use any method .
 
 
 
-
+<a name="five"></a>
 ##  How to use Graphic services :
 
 graphic services contain two classes 
@@ -81,7 +106,7 @@ graphic services contain two classes
 
 
 
-
+<a name="six"></a>
 ### Initializing the splash animations 
 
 the splash animation is initialized by these lines of code on the main.cpp file and these are already added
@@ -105,7 +130,7 @@ you can use the previous function either in cpp or qml because it is a public sl
 
 
 
-
+<a name="seven"></a>
 ### Controlling KMH speedometer :
 
 using this public slot like this 
@@ -117,7 +142,7 @@ using this public slot like this
 
 
 
-
+<a name="eight"></a>
 ### Controlling RPM speedometer :
 
 using this public slot like this 
@@ -129,7 +154,7 @@ using this public slot like this
 
 
 
-
+<a name="nine"></a>
 ### Cotrolling Frame Lights :
 
 we can select the frame color and the flashing mode
@@ -162,7 +187,7 @@ at the end use it like this
 
 
 
-
+<a name="ten"></a>
 ### Controlling the Menu :
 
 the menu is a simple path view that enable us to switch between 4 ui throught 
@@ -189,7 +214,7 @@ to select the current item
 
 
 
-
+<a name="eleven"></a>
 ### Controlling The Uis :
 
 we have this enum to select one ui between all the values inside  
@@ -219,7 +244,7 @@ and close it like this
 
 
 
-
+<a name="twelve"></a>
 ### Controlling Music Player :
 
 we can change the workspace of the music like this 
@@ -232,8 +257,7 @@ to be honest this is not the good practice because we give absolute path but you
 
 
 
-
-
+<a name="therteen"></a>
 ### Controlling Caller Uis :
 
 we can select the caller image and name on every call like this 
@@ -244,7 +268,7 @@ we can select the caller image and name on every call like this
 
 
 
-
+<a name="fourteen"></a>
 ### Controlling The Weather ui :
 
 here you can use one of the following functions 
@@ -284,7 +308,7 @@ Thank you gor your time
 
 
 
-
+<a name="fifteen"></a>
 ## Resources :
 
 https://doc.qt.io/qt-6/qml-qtquick-pathview.html
